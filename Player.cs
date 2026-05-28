@@ -44,6 +44,11 @@ public partial class Player : CharacterBody3D
             cameraPivot.Rotation = cameraRotation;
             Input.MouseMode = Input.MouseModeEnum.Captured;
         }
+
+        if (@event.IsActionPressed("exit"))
+        {
+            GetTree().Quit();
+        }
     }
 
 
