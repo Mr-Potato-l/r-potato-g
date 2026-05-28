@@ -6,6 +6,14 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_4flbx"]
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_4flbx"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_4flbx"]
+size = Vector3(0.155, 0.17, 0.215)
+
+[sub_resource type="BoxMesh" id="BoxMesh_onrkg"]
+size = Vector3(0.065, 0.675, 0.385)
+
 [node name="Player" type="CharacterBody3D" unique_id=2044010615]
 script = ExtResource("1_4flbx")
 
@@ -14,3 +22,25 @@ shape = SubResource("CapsuleShape3D_sh265")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=512276591]
 mesh = SubResource("CapsuleMesh_4flbx")
+
+[node name="CameraPivot" type="Node3D" parent="." unique_id=1158077557]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=204283303]
+shape = SubResource("SphereShape3D_4flbx")
+spring_length = 3.0
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=444570401]
+transform = Transform3D(1, 0, 0, 0, 0.9764243, 0.21586023, 0, -0.21586023, 0.9764243, 0, 0.782735, 2.7604134)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=542260209]
+transform = Transform3D(-4.371139e-08, 0, 1, -1, -4.371139e-08, -4.371139e-08, 4.371139e-08, -1, 1.9106855e-15, 0, 0.39389718, -0.56803536)
+mesh = SubResource("PrismMesh_4flbx")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=1864679688]
+transform = Transform3D(0.99505556, -0.09931975, 0, 0.09931975, 0.99505556, 0, 0, 0, 1, 0.52077776, 0.009749472, 0)
+mesh = SubResource("BoxMesh_onrkg")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=1752097606]
+transform = Transform3D(0.99506253, 0.09925028, 0, -0.09925028, 0.99506253, 0, 0, 0, 1, -0.521, 0.01, 0)
+mesh = SubResource("BoxMesh_onrkg")

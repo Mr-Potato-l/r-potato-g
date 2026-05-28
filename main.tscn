@@ -22,11 +22,5 @@ mesh = SubResource("BoxMesh_ig7tw")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=47367539]
 transform = Transform3D(0.73038006, -0.53432924, -0.42548516, -0.006236003, -0.62811804, 0.7780932, -0.6830127, -0.5656502, -0.46209678, -19, 42, -21)
 
-[node name="CameraPivot" type="Marker3D" parent="." unique_id=477148507]
-transform = Transform3D(0.49999994, -0.7071067, 0.49999994, 0.07945928, 0.6123724, 0.786566, -0.8623724, -0.35355335, 0.36237243, 0, 0, 0)
-
-[node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=196746812]
-transform = Transform3D(0.991716, 0.10728088, -0.07064262, -0.10751483, 0.99420357, 0.0004930943, 0.070286095, 0.007106036, 0.99750173, -2.1742344, -6.363976, 27.002655)
-
 [node name="Player" parent="." unique_id=2044010615 instance=ExtResource("1_ig7tw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
