@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://c4t4kebypcnqy"]
+
+[ext_resource type="Script" uid="uid://ci6tslkl1ojqj" path="res://InventoryGui.cs" id="1_8oxm1"]
+[ext_resource type="PackedScene" uid="uid://cv14xtw8yr1pe" path="res://slot_gui.tscn" id="1_t08cw"]
+
+[node name="InventoryGui" type="Control" unique_id=988134284]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -825.0
+offset_bottom = -386.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8oxm1")
+
+[node name="Panel" type="Panel" parent="." unique_id=985468991]
+custom_minimum_size = Vector2(326, 262)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -163.0
+offset_top = -131.0
+offset_right = 163.0
+offset_bottom = 131.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="Panel" unique_id=1726406288]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -158.0
+offset_top = -94.0
+offset_right = 158.0
+offset_bottom = 94.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 5
+
+[node name="Slot" parent="Panel/GridContainer" unique_id=297235743 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot2" parent="Panel/GridContainer" unique_id=614978793 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot3" parent="Panel/GridContainer" unique_id=2062022219 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot4" parent="Panel/GridContainer" unique_id=1435578295 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot5" parent="Panel/GridContainer" unique_id=2042081534 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot6" parent="Panel/GridContainer" unique_id=1609034976 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot7" parent="Panel/GridContainer" unique_id=1329701769 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot8" parent="Panel/GridContainer" unique_id=57615885 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot9" parent="Panel/GridContainer" unique_id=1473582306 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot10" parent="Panel/GridContainer" unique_id=170291715 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot11" parent="Panel/GridContainer" unique_id=1737532694 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot12" parent="Panel/GridContainer" unique_id=770079789 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot13" parent="Panel/GridContainer" unique_id=1938936336 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot14" parent="Panel/GridContainer" unique_id=335810052 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot15" parent="Panel/GridContainer" unique_id=92644667 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot16" parent="Panel/GridContainer" unique_id=345552840 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot17" parent="Panel/GridContainer" unique_id=1200997495 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot18" parent="Panel/GridContainer" unique_id=1899165613 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot19" parent="Panel/GridContainer" unique_id=1814351775 instance=ExtResource("1_t08cw")]
+layout_mode = 2
+
+[node name="Slot20" parent="Panel/GridContainer" unique_id=1951251307 instance=ExtResource("1_t08cw")]
+layout_mode = 2

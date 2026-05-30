@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cv14xtw8yr1pe"]
+
+[node name="Slot" type="Panel" unique_id=297235743]
+custom_minimum_size = Vector2(60, 60)
+offset_right = 20.0
+offset_bottom = 20.0

@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://cchkbai3jd8me"]
 
 [ext_resource type="PackedScene" uid="uid://b1wb340db16jl" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://c4t4kebypcnqy" path="res://inventory_gui.tscn" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://81b1sqx72bmx" path="res://UserInterface.cs" id="2_h2yge"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7dm0k"]
 size = Vector3(60, 2, 60)
@@ -24,3 +26,23 @@ transform = Transform3D(0.73038006, -0.53432924, -0.42548516, -0.006236003, -0.6
 
 [node name="Player" parent="." unique_id=2044010615 instance=ExtResource("1_ig7tw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="UserInterface" type="Control" parent="." unique_id=962712134]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_h2yge")
+
+[node name="InventoryGui" parent="UserInterface" unique_id=988134284 instance=ExtResource("2_0xm2m")]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+offset_top = -139.0
+offset_right = 0.0
+offset_bottom = -139.0
+grow_vertical = 0
