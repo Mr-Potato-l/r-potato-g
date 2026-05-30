@@ -27,7 +27,7 @@ public partial class Player : CharacterBody3D
     public override void _Ready()
     {
         cameraPivot = GetNode<Node3D>("CameraPivot");
-        camera = GetNode<Camera3D>("CameraPivot/Camera3D");
+        camera = GetNode<Camera3D>("CameraPivot/SpringArm3D/Camera3D");
     }
 
     public override void _Input(InputEvent @event)
@@ -39,7 +39,7 @@ public partial class Player : CharacterBody3D
 
             Vector3 cameraRotation = cameraPivot.Rotation;
             cameraRotation.X = Mathf.Clamp(
-                cameraRotation.X, Mathf.DegToRad(-TiltLimit), Mathf.DegToRad(TiltLimit)
+                cameraRotation.X, Mathf.DegToRad(-(TiltLimit - 10)), Mathf.DegToRad(TiltLimit)
             );
             cameraPivot.Rotation = cameraRotation;
             Input.MouseMode = Input.MouseModeEnum.Captured;
